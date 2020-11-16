@@ -11,33 +11,15 @@ class App extends Component {
   };
 
   componentDidMount = () => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyBZ0up_K2359_l5m3V6AbQ4pK7QR8V5m1M",
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => this.setState({ videos: result.items }))
-      .catch((error) => console.log("error", error));
+    this.props.youtube
+      .mostPopular() //
+      .then((video) => this.setState({ videos: video }));
   };
 
   getUserInput = (query) => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyBZ0up_K2359_l5m3V6AbQ4pK7QR8V5m1M`,
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => this.setState({ videos: result.items }))
-      .catch((error) => console.log("error", error));
+    this.props.youtube
+      .search(query) //
+      .then((video) => this.setState({ videos: video }));
   };
 
   selectVideo = (video) => {

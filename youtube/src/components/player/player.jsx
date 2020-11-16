@@ -18,7 +18,7 @@ class Player extends Component {
   };
 
   render() {
-    console.log(this.props.video);
+    console.log(this.props);
     return (
       <section className={styles.container}>
         <iframe
@@ -39,9 +39,6 @@ class Player extends Component {
           <span className={styles.date}>
             {this.calculateUploadedDate(this.props.video.snippet.publishedAt)}
           </span>
-          <p className={styles.description}>
-            {this.props.video.snippet.localized.description}
-          </p>
         </div>
       </section>
     );
