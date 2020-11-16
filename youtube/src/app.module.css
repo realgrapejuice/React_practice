@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  padding: 7% 0;
+}
+
+.player {
+  flex: 1 1 70%;
+}
+
+.list {
+  flex: 1 1 30%;
+}

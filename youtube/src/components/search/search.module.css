@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.3rem 0;
+  background-color: #2d3436;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 13.5%;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+.logo span {
+  font-weight: 600;
+  font-size: 1.7em;
+  letter-spacing: -0.1em;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 13.5%;
+}
+
+.input {
+  position: relative;
+  padding: 0.5rem;
+  width: 50%;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #636e72;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  top: 13px;
+  right: 13.5%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button img {
+  width: 30px;
+  height: 30px;
+}

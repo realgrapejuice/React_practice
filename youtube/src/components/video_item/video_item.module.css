@@ -1,0 +1,54 @@
+.listItem.grid {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.listItem.list {
+  display: flex;
+  width: 100%;
+}
+
+.listItem.grid a {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 1rem;
+  transition: transform 250ms ease-in;
+}
+
+.listItem.list a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: transform 250ms ease-in;
+}
+
+.listItem a:hover {
+  transform: scale(1.05);
+}
+
+.listItem img {
+  display: block;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.listItem p {
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+.channel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #636e72;
+  margin: 0;
+}
